@@ -1,0 +1,29 @@
+def checkingIfIn(a, direction = True, d = {'apple': 2, 'pear': 1, 'fruit': 19, 'orange': 5, 'banana': 3, 'grapes': 2, 'watermelon': 7}):
+    if direction == True:
+        if a in d:
+            return d[a]
+        else:
+            return False
+    else:
+        if a not in d:
+            return True
+        else:
+            return d[a]
+
+
+c_false=checkingIfIn("lichi")
+print(c_false)
+c_true=checkingIfIn("Lichi", direction=False)
+print(c_true)
+fruit_ans=checkingIfIn("fruit")
+print(fruit_ans)
+param_check=1+checkingIfIn("watermelon")
+print(param_check)
+# Call the function so that it returns False and assign that function call to the variable c_false
+
+# Call the fucntion so that it returns True and assign it to the variable c_true
+
+# Call the function so that the value of fruit is assigned to the variable fruit_ans
+
+# Call the function using the first and third parameter so that the value 8 is assigned to the variable param_check
+
